@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Hearts -->
+    <div class="hearts"></div>
+
+    <!-- Confetti -->
+    <canvas id="confetti"></canvas>
+
+    <!-- LOGIN -->
+    <div class="login" id="login">
+
+        <h1>❤️</h1>
+
+        <h2>Welcome My Love</h2>
+
+        <p>Enter our password 🤍</p>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password">
+
+        <button onclick="checkPassword()">
+            Open Gift 🎁
+        </button>
+
+    </div>
+
+    <!-- MAIN -->
+    <div class="container" id="main">
+
+        <h1>For My Favorite Person ❤️</h1>
+
+        <p class="typing"></p>
+
+        <!-- SLIDESHOW -->
+        <div class="slider">
+            <img id="slide" src="asset/foto1.jpg" alt="Photo">
+        </div>
+
+        <!-- GALLERY -->
+        <div class="gallery">
+
+            <img src="asset/foto1.jpg" alt="">
+            <img src="asset/foto2.jpg" alt="">
+            <img src="asset/foto3.jpg" alt="">
+            <img src="asset/foto4.jpg" alt="">
+
+        </div>
+
+        <!-- VIDEO -->
+        <video controls>
+            <source src="asset/video.mp4" type="video/mp4">
+        </video>
+
+        <!-- MUSIC -->
+        <audio id="music" loop>
+            <source src="asset/music.mp3" type="audio/mpeg">
+        </audio>
+
+        <button class="music" onclick="playMusic()">
+            🎵 Play Music
+        </button>
+
+        <br>
+
+        <button class="btn" onclick="showLetter()">
+            💌 Open Letter
+        </button>
+
+        <!-- LETTER -->
+        <div class="letter" id="letter">
+
+            <h2>For You ❤️</h2>
+
+            <p id="letterText"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
